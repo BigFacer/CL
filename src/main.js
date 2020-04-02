@@ -4,9 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Element from 'element-ui'
+import Axios from 'axios'
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/index.css'
 
+Vue.prototype.$axios = Axios
 Vue.config.productionTip = false
 Vue.use(Element)
 

@@ -102,6 +102,21 @@ export default {
     return {
       xxxx: '头部'
     }
+  },
+  created () {
+    this.$axios({
+      url: '/mds/hpu/dt/info',
+      params: {
+        token: '7fcc64af-ec5c-49c7-b54c-a2d2af1595fe_e16557a20eae4093874c3faff893a62e',
+        id: '6ae48083bd644fc88536f6dd64e66f3e',
+        code: 0
+      },
+      method: 'GET'
+    }).then(function (res) {
+      console.log(res)
+    }).catch(function (err) {
+      console.log(err)
+    })
   }
 }
 </script>
